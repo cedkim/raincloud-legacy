@@ -1,0 +1,16 @@
+{
+  "name": "@droppycode/raincloud",
+  "description": "Serve fresh Droppy Blocks for your SDK or library, and flatten the learning curve.",
+  "author": "Droppy",
+  "license": "MIT",
+  "vapid": {
+    "dataPath": ".data"
+  },
+  "scripts": {
+    "start": "vapid start .",
+    "staticbuild": "vapid build ."
+  },
+  "devDependencies": {
+    "vapid-cli": "^0.1"
+  }
+}
