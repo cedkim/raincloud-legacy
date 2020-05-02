@@ -10,7 +10,7 @@
     "start": "vapid start .",
     "staticbuild": "vapid build ."
   },
-  "devDependencies": {
+  "dependencies": {
     "vapid-cli": "^0.1"
   }
 }
