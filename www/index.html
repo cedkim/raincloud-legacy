@@ -10,14 +10,20 @@
   <body>
     <div class="mdl-layout mdl-js-layout mdl-layout--fixed-drawer">
       <div class="mdl-layout__drawer">
-        <span class="mdl-layout-title">🌧️&nbsp;{{title}}</span>
+        <span class="mdl-layout-title">🌧️</span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#">Blocks</a>
-          <a class="mdl-navigation__link" href="https://github.com/droppycode/raincloud">Powered by Raincloud</a>
+          <a class="mdl-navigation__link" href="https://github.com/droppycode/raincloud" target="_blank">Powered by Raincloud</a>
         </nav>
       </div>
       <main class="mdl-layout__content">
         <div class="page-content">
+          {{#section blocks multiple=true}}
+          <li class="mdl-list__item">
+             <img src="https://img.shields.io/badge/{{block-type label="Block type"}}-{{block-name label="Block name"}}-{{block-color type=choice label="Block color" options="brightgreen,green,yellowgreen,yellow,orange,red,blue,lightgrey,blueviolet" input=dropdown}}?style=for-the-badge"/>
+             <br/>{{description label="Block description" type=html editor=wysiwyg}}
+          </li>
+          {{/section}}
         </div>
       </main>
     </div>
