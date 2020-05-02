@@ -8,5 +8,14 @@ Raincloud is a content management system for Droppy Blocks, powered by [Vapid](h
 ### Who is Raincloud for?
 Raincloud is for SDK and library developers who want to flatten the learning curve for their SDK/library.
 ## Using Raincloud
-### Setup
-TODO: Add setup guide
+### Hosting
+#### Method 1: One-click deploy
+Feeling lazy? Click the button below to deploy Raincloud to [Vercel](https://vercel.com/) in one click (or maybe two).
+<br/><br/>[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https%3A%2F%2Fgithub.com%2Fdroppycode%2Fraincloud%2F)
+#### Method 2: Slightly slower deploy
+Raincloud can run on any server with Node.js. Simply deploy this repository to such a server, and use `npm start` to start Raincloud.
+#### Method 3: Static deploy
+Run Raincloud on your own computer by running `npm start`. Then, go to the dashboard (find out how in **Management**) and make your blocks. Once you're done, run `npm run staticbuild` to export static files.
+### Management
+#### Accessing the dashboard
+To access the dashboard, visit your instance's URL, and add `/dashboard` to the end. You'll be able to secure your dashboard, and you'll also be able to manage your instance.
